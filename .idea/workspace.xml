@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8de12c78-368f-4e35-8a0f-dd092db00e42" name="Changes" comment="Commit 1">
-      <change afterPath="$PROJECT_DIR$/my_file.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Day 25.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Day 25 CSV and Pandas.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="8de12c78-368f-4e35-8a0f-dd092db00e42" name="Changes" comment="Commit 2">
+      <change afterPath="$PROJECT_DIR$/squirrel_raw_data.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -57,6 +54,11 @@
     &quot;git-widget-placeholder&quot;: &quot;master&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jlund\Desktop\Python Projects\100 Days Bootcamp\Day 25 csvs, US states game\Day 25" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="Day 25 CSV and Pandas" />
@@ -208,11 +210,28 @@
       <option name="project" value="LOCAL" />
       <updated>1755962337623</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Commit 2">
+      <option name="closed" value="true" />
+      <created>1756264996783</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1756264996783</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Commit 2">
+      <option name="closed" value="true" />
+      <created>1756265015611</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1756265015611</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Commit 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit 1" />
+    <MESSAGE value="Commit 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit 2" />
   </component>
 </project>

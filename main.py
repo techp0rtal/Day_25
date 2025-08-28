@@ -1,5 +1,3 @@
-
-
 # we can use open() to access the data from a csv
 # with open("./weather_data.csv", "r") as weather_data:
 #     data = weather_data.readlines()
@@ -22,15 +20,15 @@
 
 # ^^^ this method works, but is a lot of work to get just 1 column. what if we were using more complex data? let's use pandas
 # 3 lines of code vs 8 lines of code
-import pandas
+# import pandas
 # 1. Create a pandas dataframe object (basically an Excel sheet in Python)
-data = pandas.read_csv("weather_data.csv")
+# data = pandas.read_csv("weather_data.csv")
 #print(data)
 # if we want to print a specific column, just use the [] and specify the name of the column you want printed
 #print(data["temp"])
 # series methods can be found here https://pandas.pydata.org/docs/reference/api/pandas.Series.html
 
-data_dict = data.to_dict() # this converts it into a dictionary
+# data_dict = data.to_dict() # this converts it into a dictionary
 # print(data_dict)
 #
 # temp_list = data["temp"].to_list()
@@ -66,12 +64,47 @@ data_dict = data.to_dict() # this converts it into a dictionary
 
 # How to create a dataframe from scratch (instead of reading from a csv file like we did previously).
 #Let's say we wanted to create a data frame just from some data you're generating in python
-data_dict = {
-    "students": ["Amy", "James", "Angela"],
-    "scores": [76, 56, 65]
-}
-my_dataframe = pandas.DataFrame(data_dict)
-print(my_dataframe)
+# data_dict = {
+#     "students": ["Amy", "James", "Angela"],
+#     "scores": [76, 56, 65]
+# }
+# my_dataframe = pandas.DataFrame(data_dict)
+# print(my_dataframe)
+#
+# # Now we can go even further than this. Let's convert to a csv file
+# my_dataframe.to_csv("my_data.csv") # we'll name it my_data.csv
 
-# Now we can go even further than this. Let's convert to a csv file
-my_dataframe.to_csv("my_data.csv") # we'll name it my_data.csv
+# Now for the squirrel tasK: count the number of squirrels for each color fur.
+import pandas
+squirrel_data_sheet = pandas.read_csv("squirrel_raw_data.csv")
+
+fur_color_list = squirrel_data_sheet["Primary Fur Color"].to_list()
+#print(fur_color_list)
+gray = 0
+cinnamon = 0
+black = 0
+for color in fur_color_list:
+    if color == "Gray":
+        gray += 1
+    elif color == "Cinnamon":
+        cinnamon += 1
+    elif color == "Black":
+        black += 1
+#print(gray, cinnamon, black)
+
+squirrel_count = {
+    "Fur Color": ["Gray", "Cinnamon", "Black"],
+    "Count": [gray, cinnamon, black]
+}
+
+squirrel_data_frame = pandas.DataFrame(squirrel_count)
+print(squirrel_data_frame)
+
+#angela's way:
+"""
+import pandas
+data = pandas.read_csv("squirrel_raw_data.csv")
+grey_squirrels_count = len(data[data["Primary Fur Color"] == "Gray"])
+
+
+"""
